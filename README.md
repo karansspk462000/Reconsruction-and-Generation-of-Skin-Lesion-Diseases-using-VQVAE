@@ -2,7 +2,7 @@
 
 ## Overview:
 
-This project aims to utilize the ISIC 2016 dataset for segmenting skin disease contours and generating images using Generative Adversarial Networks (GANs). The process involves segmentation of skin disease contours from the dataset, providing sketches and labels to Conditional GAN (CGAN) and Auxiliary Classifier GAN (ACGAN) to generate corresponding images, and finally testing the generated images using a pre-trained model.
+This project aims to utilize the ISIC 2016 dataset for segmenting skin disease contours and generating images using Vector Quantized Variational Autoencoders (VQ-VAE). The workflow involves segmenting skin disease contours from the dataset, using these segmentations to create sketches and labels, and providing them to the VQ-VAE model to generate corresponding realistic skin lesion images. The generated images are then evaluated using a pre-trained model to assess their quality and fidelity.
 
 ## Prerequisites:
 
@@ -16,7 +16,7 @@ This project aims to utilize the ISIC 2016 dataset for segmenting skin disease c
 
 1. Clone the repository:
 
-git clone https://github.com/yourusername/skin-disease-segmentation-gan.git
+git clone https://github.com/yourusername/Reconsruction-and-Generation-of-Skin-Lesion-Diseases-using-VQVAE.git
 
 
 2. Install necessary dependencies.
@@ -34,7 +34,7 @@ git clone https://github.com/yourusername/skin-disease-segmentation-gan.git
 
 2. **Image Generation:**
 
-- Provide the generated contours and labels to the CGAN or ACGAN model for image generation.
+- Provide the generated contours and labels to the VQVAE model for image generation.
 
 3. **Testing:**
 
